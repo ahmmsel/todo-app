@@ -1,0 +1,85 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  transition: all .5s;
+  font-family: 'Poppins', sans-serif, cursive;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-color: #DCC8DE;
+}
+
+.items{
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  transition: all 500ms;
+}
+
+#todo-app{
+  margin: 5rem auto;
+  width: 90%;
+  max-width: 50rem;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  transition: all 500ms;
+  padding: 2rem;
+  background-image: linear-gradient(#F5F2EF, #F5F2F4);
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.title{
+  margin: 1rem 0;
+  opacity: .9;
+  padding: 1rem 0;
+}
+
+.todo-form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.todo-form input{
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+}
+
+.todo-form button{
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  width: 100%;
+}
+
+.todo-item h5{
+  text-align: center;
+  overflow: hidden;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .todo-form{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .todo-form input, .todo-form button{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+}
